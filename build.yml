@@ -16,4 +16,4 @@ spec:
       kind: DockerImage
       name: quay.io/oolaleyee/greeting-console
     pushSecret:
-      name: oolaleyee-auth.json
+      name: quay-credentials

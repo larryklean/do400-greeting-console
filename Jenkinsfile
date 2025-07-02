@@ -22,5 +22,12 @@ pipeline{
         }
 
         // Add the Release stage here
+
+        stage('Release') {
+    steps {
+        sh '''
+            oc project aegsjr-greetings
+            oc start-build greeting-console  --follow --wait
+        '''
     }
 }
